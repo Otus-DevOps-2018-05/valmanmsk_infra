@@ -1,0 +1,4 @@
+#!/bin/bash
+cd /home/appuser
+wget https://raw.githubusercontent.com/Otus-DevOps-2018-05/valmanmsk_infra/master/startup_script
+
