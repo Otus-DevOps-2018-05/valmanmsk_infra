@@ -18,3 +18,10 @@ Host someinternalhost
         User appuser
         ProxyCommand ssh -o 'ForwardAgent yes' -i ~/.ssh/appuser appuser@35.187.169.128 'nc %h %p'
 
+ДЗ-4:
+testapp_IP = 35.187.3.107
+testapp_port = 9292
+
+Creating Rule for FirWall:
+gcloud compute firewall-rules create default-puma-server --allow tcp:9292
+
