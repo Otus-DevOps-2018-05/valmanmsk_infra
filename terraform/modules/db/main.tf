@@ -25,14 +25,14 @@ resource "google_compute_instance" "db" {
     private_key = "${file(var.private_key_path)}"
   }
 
-  provisioner "file" {
+/*  provisioner "file" {
     source     = "${path.module}/files/mongod.conf"
     destination = "/tmp/mongod.conf"
   }
 
   provisioner "remote-exec" {
     script = "${path.module}/files/mongo_config.sh"
-  }
+  } */
 }
 
 resource "google_compute_firewall" "firewall_mongo" {
