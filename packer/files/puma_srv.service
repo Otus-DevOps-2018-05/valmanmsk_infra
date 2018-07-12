@@ -1,0 +1,14 @@
+[Unit]
+Description = Reddit
+Requires=network-online.target
+After=network.target
+
+[Service]
+User=appuser
+WorkingDirectory=/home/appuser/reddit
+ExecStart=/usr/local/bin/puma
+ExecReload=/usr/local/bin/puma -R
+
+[Install]
+WantedBy = multi-user.target
+
