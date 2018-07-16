@@ -1,0 +1,22 @@
+project = "infra-blabla"
+
+public_key_path = "~/.ssh/appuser.pub"
+
+disk_image = "reddit-base"
+
+private_key_path = "~/.ssh/appuser"
+
+reddit_app = "reddit-app-stage"
+
+reddit_app_ip = "reddit-app-ip-stage"
+
+allow_puma = "allow-puma-stage"
+
+allow_mongo = "allow-mongo-stage"
+
+reddit_db = "reddit-db-stage"
+
+allow_ssh = "allow-ssh-stage"
+
+count = "1"
+
