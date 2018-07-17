@@ -6,8 +6,8 @@ bastion_IP = 35.187.169.128
 someinternalhost_IP = 10.142.0.2
 ```
 
-## 1. ssh -i ~/.ssh/appuser -At appuser@35.187.169.128 ssh 10.142.0.2
-## 2. In .ssh/config add:
+ 1. ssh -i ~/.ssh/appuser -At appuser@35.187.169.128 ssh 10.142.0.2
+ 2. In .ssh/config add:
 ```
 Host someinternalhost
        HostName 10.142.0.2
